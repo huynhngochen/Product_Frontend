@@ -1,0 +1,312 @@
+/* ===  QUY TẮC CODE CSS - từ tổng quan đến chi tiết
+1/ Từ ngoài vào trong
+2/ Từ sau ra trước
+3/ từ trên xuống dưới
+4/ từ trái sang phải */
+
+body {
+    font-family: 'Open Sans';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.container {
+    width: 1170px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0px auto;
+    display: flex;
+}
+
+ul {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+/* ======================= HEADER ====================== */
+#header {
+    background: #23282d;
+    padding-top: 28px;
+    padding-bottom: 10px;
+    margin-bottom: 32px;
+}
+form#find {
+    position: relative;
+}
+
+form#find input{
+    background: #131619;
+    width: 248px;
+    border: none;
+    outline: none;
+    padding: 9px 42px 9px 15px;
+    color: #909090;
+}
+
+form#find button {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    background: none;
+    border: none;
+    color: #a2a1a1;
+    padding: 9px 13px;
+}
+
+form#find ::placeholder {
+    color: #909090;
+}
+
+nav {
+    margin-top: 7px;
+    flex: 100%;
+    border-right: 10px solid #ff2d2d;
+}
+
+ul#main-menu li a{
+    padding: 6px 20px;
+    display: block;
+    color: #eeeeee;
+}
+ul#main-menu li:first-child a{
+    padding-left: 0px;
+}
+
+ul#main-menu li:hover a, 
+ul#main-menu li.active a{
+    text-decoration: none;
+    color: #4db2ec;
+}
+
+
+/* ======================= Bài Viết nổi bật ====================== */
+#wp-post-featured {
+    margin-bottom: 20px;
+}
+
+.box .box-head h3 {
+    font-family: 'Open Sans';
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 3px 13px; 
+    background: #232425;
+    color: #eeeeee;
+    margin-bottom: 0;
+}
+ 
+.box .box-body {
+    padding-top: 20px;
+}
+.box.post-featured .box-body{
+    padding-bottom: 30px;
+    border-bottom: 1px solid #dadada;
+}
+ul.list-post-featured li .post-thumb {
+    display: block;
+    overflow: hidden;
+}
+ul.list-post-featured li .post-thumb img{
+    transition: 0.25s;
+}
+ul.list-post-featured li .post-thumb:hover img{
+    transform: scale(1.05);
+}
+
+ul.list-post-featured li {
+    flex: 360px 0 1;
+}
+
+ul.list-post-featured li a.post-title {
+    color: #5f5f5f;
+    font-weight: 600;
+    text-transform: uppercase;
+    display: block;
+    margin-top: 20px;
+}
+
+
+/* ============== Bài Viết mới ================ */
+/* Content */
+#content {
+    flex: 765px;
+    padding-right: 15px;
+}
+.box.new-post .box-head h3{
+    background-color: #4db2ec;
+    color: #fcfcfc;
+    
+}
+.box.new-post .box-head {
+    border-bottom: 2px solid #4db2ec ;
+} 
+/* ---------- Box Body --------- */
+ul.list-post li {
+    display: flex;
+    padding-bottom: 40px;
+}
+ul.list-post li a.post-thumb{
+    display: block;
+    flex: 278px;
+    padding-right: 15px;
+}
+ul.list-post li .more-info {
+    padding-left: 15px;
+}
+ul.list-post li .more-info .post-title {
+    display: block;
+    color: #111111;
+    font-size: 21px;
+    font-weight: 600;
+}
+ul.list-post li:hover .more-info a.post-title{
+    color: #4db2ec;
+}
+ul.list-post li .more-info .post-published {
+    font-size: 11px;
+    font-weight: 600;
+    padding: 6px 0px;
+}
+ul.list-post li .more-info .post-published a.post-author{
+    color: #111111;
+}
+ul.list-post li .more-info .post-published .post-date{
+    color: #aaaaaa;
+}
+
+ul.list-post li .more-info .post-excerpt {
+    font-size: 13px;
+    color: #777777;
+    margin-bottom: 0;
+}
+
+/* Sidebar */
+
+#sidebar{
+    flex: 375px;
+    padding-left: 15px;
+}
+a.advertise {
+    display: block;
+}
+#sidebar .advertise img{
+    padding-bottom: 40px;
+}
+
+.box.top-topic .box-head h3 {
+    background: #ff2d2d;
+    color: #fcfcfc;
+}
+
+.box.top-topic .box-head {
+    border-bottom: 2px solid #ff2d2d;
+}
+
+ul.list-topic li a{
+    color: #212121;
+    font-size: 16px;
+    display: block;
+    padding: 6px 0px;
+    position: relative;
+}
+ul.list-topic li .num-post{
+    position: absolute;
+    top: 7px;
+    right: 26px;
+}
+ul.list-topic li:hover a{
+    color: #ff2d2d;
+    text-decoration: none;
+}
+
+/* ================== FOOTER ======================= */
+#footer {
+    background: #2e2f30;
+    padding-top: 50px;
+    padding-bottom: 75px;
+    color: #f6f6f6;
+}
+
+#footer .box .box-head h3{
+    font-size: 18px;
+    font-weight: 600;
+    background: none;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+#footer .box .box-body{
+    padding-top: 45px;
+    
+}
+#footer .box.about-me .box-body{
+    font-size: 14px;
+}
+#footer .box.logo {
+    flex: 280px;
+    padding-right: 15px;
+}
+#footer .box.logo .box-head{
+    visibility: hidden;  /*thuộc tính làm ẩn phần tử nhưng k mất đi không gian của nó*/
+} 
+
+#footer .box.about-me {
+    flex: 680px;
+    padding-left: 15px;
+    padding-right: 180px;
+}
+
+#footer .box.follow {
+    flex: 180px;
+    padding-left: 15px;
+}
+#footer .box.about-me .box-body p{
+   margin-bottom: 0;
+}
+#footer .box.about-me .box-body a{
+    color: #4db2ec;
+}
+ul.list-social li:last-child {
+    margin-right: 0;
+}
+ul.list-social li {
+    margin-right: 15px;
+}
+ul.list-social li a{
+    flex: 34px;
+    padding: 6px 11px;
+    background: #434648;
+    color: #eeeeee;
+    display: block;
+}
+
+ul.list-social li:hover a{
+    color : #4db2ec;
+}
+
+
+/* ================= COPYRIGHT ================= */
+#wp-copy-right {
+    background: #222527;
+    color: #ffffff;
+    font-size: 14px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+}
+#wp-copy-right .copyright{
+    margin-bottom: 0;
+}
+ul#footer-menu li:last-child a{
+    padding-right: 0;
+}
+ul#footer-menu li a{
+    padding: 0px 13px;
+    color: #f3f3f3;
+    display: block;
+}
+ul#footer-menu li:hover a {
+    text-decoration: none;
+    color: #4db2ec;
+}
